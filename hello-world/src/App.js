@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './output.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Now
-        </a>
-      </header>
-    </div>
-  );
+import Page1 from './page1.jsx';
+import Page2 from './page2.jsx';
+
+
+export default function App() {
+    return (
+	<>
+	<h1>Header</h1>
+        <div className="snap-y snap-mandatory overflow-y-scroll h-screen flex-grow z-0">
+            <div className="snap-always snap-center" id="page1">
+                <Page1 />
+            </div>
+            <div className="snap-always snap-center" id="page2">
+                <Page2 />
+            </div>
+            <div className="snap-always snap-center" id="page1">
+                <Page1 />
+            </div>
+        </div>
+	<h1>Footer</h1>
+	</>
+    );
 }
-
-export default App;

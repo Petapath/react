@@ -9,10 +9,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/*  old app without routing*/}
-    {/*<App/>*/}
+    <App />
 
     {/*  app with routing*/}
-    <AppWithRouter />
+    {/*<AppWithRouter />*/}
 
   </React.StrictMode>
 );

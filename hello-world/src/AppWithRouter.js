@@ -9,7 +9,6 @@ import Page2 from './page2.jsx';
 const history = createBrowserHistory();
 
 const AppWithRouter = (() => {
-
     return (
         <Router history={history}>
             <Switch>

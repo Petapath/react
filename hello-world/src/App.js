@@ -9,6 +9,7 @@ import {BrowserRouter, NavLink, Route, Routes} from 'react-router-dom';
 import {createBrowserHistory} from 'history';
 import Page1 from "./page1";
 import Page2 from "./page2";
+import Page4 from "./page4";
 
 const history = createBrowserHistory();
 const user = {
@@ -42,7 +43,7 @@ const routeToComponents = (() => {
       <Route exact path='/team' element={<Page2/>}/>
       <Route exact path='/projects' element={<Page1/>}/>
       <Route exact path='/calender' element={<Page2/>}/>
-      <Route exact path='/reports' element={<Page1/>}/>
+      <Route exact path='/reports' element={<Page4/>}/>
     </Routes>
   )
 });
